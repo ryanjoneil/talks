@@ -1,0 +1,7 @@
+FROM ubuntu:trusty
+RUN apt-get install -y bzr
+RUN apt-get install -y cvs
+RUN apt-get install -y software-properties-common
+RUN add-apt-repository "deb http://archive.ubuntu.com/ubuntu trusty universe"
+RUN apt-get update
+RUN apt-get install -y rcs
