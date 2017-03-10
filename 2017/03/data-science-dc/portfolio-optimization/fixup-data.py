@@ -1,7 +1,7 @@
 import csv
 import pandas
 
-raw_data = [row for row in csv.reader(open('2017-03-09-FRB_H10.csv'))]
+raw_data = [row for row in csv.reader(open('FRB_H10.csv'))]
 
 # Transpose header metadata and turn it into a data frame.
 head_data = [[] for _ in range(len(raw_data[0]))]
@@ -53,4 +53,5 @@ exp_returns = pandas.concat({'mean': returns.mean(), 'variance': returns.var()},
 returns_cov = returns.cov()
 
 exp_returns.to_csv('currency-returns.csv')
-returns_cov.to_csv('currency-covariance.csv')
+returns_cov.to_csv('currency-covariance.csv', header=False, index=False)
+    
