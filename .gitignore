@@ -5,3 +5,4 @@ lib/
 man/
 pip-selfcheck.json
 share/
+.ipynb_checkpoints/
