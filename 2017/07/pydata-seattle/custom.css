@@ -1,0 +1,16 @@
+.reveal{
+    font-size: 22px !important;
+}
+
+.reveal .progress {
+    background-color: #F63440;
+    height: 50px;
+    background-image: url(grubhub-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 10px;
+}
+
+.reveal .progress span {
+    display: none !important;
+}
